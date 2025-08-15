@@ -15,3 +15,6 @@ Role-Based Access Control Student Lab
 6. Ensure that the Auto-generate password is selected, select the Show password checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph.
 7. Click Create.
 8. Refresh the **Users,	All users** blade to verify the new user was created in your Microsoft Entra tenant.
+<img width="1005" height="365" alt="image" src="https://github.com/user-attachments/assets/565a6e84-6b65-4fb8-91ff-d4001dbaad6a" />
+
+### 2️⃣ **Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.**
