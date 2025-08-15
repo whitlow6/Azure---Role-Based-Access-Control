@@ -40,6 +40,8 @@ In this task, you will create the Senior Admins group, add the user account of J
 5. Click the No members selected link, on the Add members blade, select Joseph Price, and click Select.
 6. Back on the New Group blade, click Create.
 
+Result: You used the Azure Portal to create a user and a group, and assigned the user to the group
+
 ### 3️⃣ **Create a Junior Admins group containing the user account of Isabel Garcia as its member.**
 
 In this exercise, you will complete the following tasks:
@@ -75,7 +77,7 @@ Task 2: Use PowerShell to create the Junior Admins group and add the user accoun
 
 <img width="791" height="18" alt="image" src="https://github.com/user-attachments/assets/954e2542-6db1-4adf-b504-781da36008e7" />
 
-4️⃣ Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
+### 4️⃣ Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
 
 In this task, you will create the Junior Admins group and add the user account of Isabel Garcia to the group by using PowerShell.
 
@@ -93,6 +95,70 @@ In this task, you will create the Junior Admins group and add the user account o
 
 4. In the PowerShell session within the Cloud Shell pane, run the following to add the user account of Isabel to the Junior Admins43846135 group:
 
+<img width="938" height="19" alt="image" src="https://github.com/user-attachments/assets/a197db1f-2900-43f0-aefb-2fa7b8583958" />
 
+snag - ran into error code:
 
+<img width="802" height="22" alt="image" src="https://github.com/user-attachments/assets/331aa86d-eec5-4365-844a-1eac3e4a6384" />
 
+fixed this error by removing the line "$user.userPrincipalName" and instead actually putting the User Principal Name of Isabella which can be found under Microsoft Entra ID > Users.
+(not listing the user name here for security purposes)
+
+5. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins43846135 group contains the user account of Isabel:
+
+Result: You used PowerShell to create a user and a group account, and added the user account to the group account.
+
+### 5️⃣ Create a Service Desk group containing the user account of Dylan Williams as its member.
+
+In this exercise, you will complete the following tasks:
+
+Task 1: Use Azure CLI to create a user account for Dylan Williams.
+
+Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group.
+
+1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select Bash, and, when prompted, click Confirm.
+2. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant:
+
+<img width="902" height="21" alt="image" src="https://github.com/user-attachments/assets/6e197a4a-af6c-4867-bebd-5a26684ac37c" />
+
+3. In the Bash session within the Cloud Shell pane, run the following to create a user, Dylan Williams. Use yourdomain.
+
+<img width="1052" height="17" alt="image" src="https://github.com/user-attachments/assets/11cf1ff6-bca7-4a24-a97c-1f5db39345eb" />
+
+4. In the Bash session within the Cloud Shell pane, run the following to list Microsoft Entra ID user accounts (the list should include user accounts of Joseph, Isabel, and Dylan)
+
+<img width="283" height="15" alt="image" src="https://github.com/user-attachments/assets/f7252374-ea54-42c1-81ca-8a8d966e87ba" />
+
+Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group.
+
+1. In the same Bash session within the Cloud Shell pane, run the following to create a new security group named Service Desk.
+
+<img width="721" height="23" alt="image" src="https://github.com/user-attachments/assets/8e6d1096-ef58-418d-8647-c41c8bc2c09b" />
+
+2. In the Bash session within the Cloud Shell pane, run the following to list the Microsoft Entra ID groups (the list should include Service Desk, Senior Admins, and Junior Admins groups):
+
+<img width="1530" height="101" alt="image" src="https://github.com/user-attachments/assets/27eb7667-db50-4338-ad4f-2d2d4481fab0" />
+
+3. In the Bash session within the Cloud Shell pane, run the following to obtain a reference to the user account of Dylan Williams:
+
+<img width="597" height="19" alt="image" src="https://github.com/user-attachments/assets/14c01550-0d9c-4b68-b210-b900903b9fcd" />
+
+4. In the Bash session within the Cloud Shell pane, run the following to obtain the objectId property of the user account of Dylan Williams:
+
+<img width="443" height="17" alt="image" src="https://github.com/user-attachments/assets/7553fd01-43f9-44f7-87e9-ca6bae3e7799" />
+
+5. In the Bash session within the Cloud Shell pane, run the following to add the user account of Dylan to the Service Desk group:
+
+<img width="619" height="18" alt="image" src="https://github.com/user-attachments/assets/ab8af317-27ec-4b90-be1f-83c057c41b7d" />
+
+6. In the Bash session within the Cloud Shell pane, run the following to list members of the Service Desk group and verify that it includes the user account of Dylan:
+
+<img width="421" height="25" alt="image" src="https://github.com/user-attachments/assets/4e205e53-7faa-4ff0-be7e-3be930f6b5eb" />
+
+7. Close the Cloud Shell pane.
+
+Result: Using Azure CLI you created a user and a group accounts, and added the user account to the group.
+
+ # Project Completed! 🎉
+
+ These scenarios are foundational for any IT Help Desk technician. Mastering these tasks ensures you can efficiently manage common Role-Based-Access-Control requests.
