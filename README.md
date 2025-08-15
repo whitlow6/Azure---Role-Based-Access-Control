@@ -1,5 +1,6 @@
-# Azure - Role-Based-Access-Control
-Role-Based Access Control Student Lab
+# Azure Role Based Access Control
+
+Role Based Access Control Student Lab
 
 In this exercise, you will complete the following tasks:
 
